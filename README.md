@@ -18,7 +18,7 @@ A process is a program in execution. It is the basic unit of work in an operatin
 2. Hold and Wait: Processes hold resources while waiting for others
 3. No Preemption: Resources cannot be forcibly taken
 4. Circular Wait: A circular chain of processes waiting for resources
-
+-
 1. 互斥条件：资源不能共享
 2. 持有并等待：进程持有资源的同时等待其他资源
 3. 非抢占：资源不能被强制剥夺
@@ -48,7 +48,7 @@ Virtual memory is a memory management technique that provides an idealized abstr
 1. Running: Process is executing on the CPU
 2. Ready: Process is ready to execute when given CPU time
 3. Blocked (Waiting): Process is waiting for an event or resource
-
+-
 1. 运行：进程正在CPU上执行
 2. 就绪：进程准备好在获得CPU时间时执行
 3. 阻塞（等待）：进程正在等待某个事件或资源
@@ -69,7 +69,7 @@ A critical section is a segment of code where shared resources are accessed and 
 1. Mutual Exclusion: Only one process in critical section at a time
 2. Progress: If no process is in the critical section, one waiting process must be able to enter
 3. Bounded Waiting: A process cannot wait indefinitely to enter its critical section
-
+-
 1. 互斥：任何时候只有一个进程在临界区中
 2. 进展：如果没有进程在临界区中，则必须让一个等待进程进入
 3. 有限等待：一个进程不能无限期地等待进入其临界区
@@ -124,7 +124,7 @@ CPU调度是确定就绪队列中哪个进程应该分配CPU的过程。它旨�
 3. Running: Process is being executed by CPU
 4. Blocked: Process is waiting for an event
 5. Exit: Process has finished execution
-
+-
 1. 新建：进程正在被创建
 2. 就绪：进程准备好被执行
 3. 运行：进程正在被CPU执行
@@ -188,7 +188,7 @@ A race condition occurs when multiple processes or threads access and manipulate
 2. Avoidance: Dynamically examine resource allocation requests to ensure safety
 3. Detection and Recovery: Allow deadlocks to occur, detect them, and recover
 4. Ignorance: Pretend deadlocks never occur (ostrich algorithm)
-
+-
 1. 预防：确保四个必要条件中至少有一个不会发生
 2. 避免：动态检查资源分配请求以确保安全
 3. 检测和恢复：允许死锁发生，检测它们，并进行恢复
@@ -258,7 +258,7 @@ Page replacement is the process of selecting which page in memory should be swap
 1. Send operation
 2. Receive operation
 3. Message content/format
-
+-
 1. 发送操作
 2. 接收操作
 3. 消息内容/格式
@@ -279,7 +279,7 @@ TLB是一种内存缓存，存储虚拟内存到物理内存地址的最近转�
 1. Contiguous allocation: Files occupy contiguous blocks
 2. Linked allocation: Each block contains a pointer to the next block
 3. Indexed allocation: All pointers are stored in an index block
-
+-
 1. 连续分配：文件占用连续的块
 2. 链接分配：每个块包含指向下一个块的指针
 3. 索引分配：所有指针存储在索引块中
@@ -341,7 +341,7 @@ Cache coherence ensures that multiple copies of the same memory block across dif
 2. Operating System: Controls and coordinates hardware use
 3. Application Programs: Define ways system resources are used
 4. Users: People, machines, other computers
-
+-
 1. 硬件：CPU、内存、I/O设备
 2. 操作系统：控制和协调硬件使用
 3. 应用程序：定义系统资源的使用方式
@@ -381,7 +381,7 @@ The resident set is the portion of a process's address space that is currently i
 3. File system manipulation
 4. Communications
 5. Error detection and response
-
+-
 1. 程序执行
 2. I/O操作
 3. 文件系统操作
@@ -436,7 +436,7 @@ I/O密集型进程花费更多时间进行I/O操作而不是计算，经常因I/
 1. Mutual exclusion enforcement
 2. Progress requirement satisfaction
 3. Bounded waiting implementation
-
+-
 1. 互斥执行的强制
 2. 进展需求的满足
 3. 有限等待的实现
